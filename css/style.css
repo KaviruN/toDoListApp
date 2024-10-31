@@ -126,6 +126,11 @@ form input:focus {
 }
 
 
+.done-style {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
 /* ---- medea query ----  */
 
 @media (min-width: 675px) {
