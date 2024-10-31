@@ -9,6 +9,13 @@
 }
 
 
+:root {
+    --DARK-NIGHT: hsl(227, 72%, 10%);
+    --LOWER-DARK-NIGHT: hsl(227, 72%, 10%);
+    --LIGHT-BLUE: hsl(227, 72%, 10%);
+    --LIGHT-PURPLE: hsl(242, 30%, 66%);
+}
+
 body {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -17,6 +24,12 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+}
+
+/* ---- typography ---- */
+
+.container {
+    border: 2px solid black;
 }
 
 
