@@ -2,3 +2,12 @@
 <img src="images/delete.svg" alt="Delete" class="delete-icon" id="delete-img" onclick="toDoDelete()"/> */
 
 
+function addToList(){
+    
+}
+
+function toDoDone() {
+
+}
+
+function toDoDelete(){}
