@@ -11,9 +11,9 @@
 
 :root {
     --DARK-NIGHT: hsl(227, 72%, 10%);
-    --LOWER-DARK-NIGHT: hsl(227, 72%, 10%);
-    --LIGHT-BLUE: hsl(227, 72%, 10%);
-    --LIGHT-PURPLE: hsl(242, 30%, 66%);
+    --LOWER-DARK-NIGHT: hsl(227, 72%, 20%);
+    --LIGHT-NIGHT: hsl(289, 68%, 82%);
+    --LIGHT-PURPLE: hsl(300, 100%, 94%);
 }
 
 body {
@@ -23,13 +23,34 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    background-color: var(--DARK-NIGHT);
+    color: hsl(0, 0%, 100%);
+
 }
 
 /* ---- typography ---- */
 
 .container {
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    min-width: 70%;
+    
 }
 
+.title {
+    font-size: 2rem;
+}
 
+.list ul {
+    list-style-type: none;
+    padding: 2em;
+}
+
+.list li {
+    padding: .75em 1em;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: var(--LOWER-DARK-NIGHT);
+    margin-bottom: 1.5em;
+    border-radius: 2em;
+}
