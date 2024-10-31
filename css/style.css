@@ -50,7 +50,21 @@ body {
 /* 
 ---- layout ---- */
 
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
 
+form input {
+    width: 70%;
+    padding: .75em;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 2em;
+    margin-right: 1em;
+}
 
 .list li {
     display: flex;
@@ -62,6 +76,5 @@ body {
     margin-bottom: 1.5em;
     border-radius: 2em;
 }
-
 
 
