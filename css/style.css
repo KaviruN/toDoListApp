@@ -84,7 +84,7 @@ form input {
     justify-content: space-evenly;
     padding: .75em 1em;
     width: 100%;
-    font-size: 1rem;
+    font-size: var(--font);
     background-color: var(--LOWER-DARK-NIGHT);
     margin-bottom: 1.5em;
     border-radius: 2em;
@@ -93,4 +93,8 @@ form input {
 
 /* ---- medea query ----  */
 
-
+@media (min-width: 675px) {
+    :root{
+        --font: 1.5em;
+    }
+}
