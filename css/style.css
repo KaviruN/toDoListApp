@@ -33,17 +33,22 @@ body {
 /* ---- typography ---- */
 
 .container {
-    border: 2px solid rgb(255, 255, 255);
+    border: 5px solid var(--LIGHT-PURPLE);
+    border-image-slice: 2;
     text-align: center;
     width: 70%;
     max-width: 570px;
     padding: 2em;
+    border-radius: 1.8em;
+    background-color: var(--LIGHT-PURPLE);
+    color: var(--DARK-NIGHT);
     
 }
 
 .title {
     font-size: 2rem;
     margin-bottom: 1em;
+    opacity: .8;
 }
 
 .list ul {
@@ -63,13 +68,13 @@ form {
 }
 
 form input {
-    width: 70%;
+    width: 100%;
     padding: .75em;
     font-size: var(--font);
     border: none;
     border-radius: 2em;
     margin-right: 1em;
-    
+    outline: none;
 }
 
 .add-img {
@@ -80,14 +85,16 @@ form input {
 }
 
 .list li {
+    color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: .75em 1em;
     width: 100%;
     font-size: var(--font);
-    background-color: var(--LOWER-DARK-NIGHT);
+    background-color: var(--LIGHT-NIGHT);
     margin-bottom: 1.5em;
     border-radius: 2em;
+    opacity: .8;   
 }
 
 
@@ -96,5 +103,8 @@ form input {
 @media (min-width: 675px) {
     :root{
         --font: 1.5em;
+    }
+    .add-img {
+        padding: 1em;
     }
 }
