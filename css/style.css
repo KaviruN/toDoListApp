@@ -14,6 +14,8 @@
     --LOWER-DARK-NIGHT: hsl(227, 72%, 20%);
     --LIGHT-NIGHT: hsl(250, 36%, 35%);
     --LIGHT-PURPLE: hsl(300, 100%, 94%);
+
+    --font: var(--font);
 }
 
 body {
@@ -63,7 +65,7 @@ form {
 form input {
     width: 70%;
     padding: .75em;
-    font-size: 1.2rem;
+    font-size: var(--font);
     border: none;
     border-radius: 2em;
     margin-right: 1em;
@@ -82,10 +84,13 @@ form input {
     justify-content: space-evenly;
     padding: .75em 1em;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: var(--LOWER-DARK-NIGHT);
     margin-bottom: 1.5em;
     border-radius: 2em;
 }
+
+
+/* ---- medea query ----  */
 
 
