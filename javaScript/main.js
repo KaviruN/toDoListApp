@@ -5,21 +5,22 @@ let list = document.getElementById('list');
 const alertMg = document.getElementById('alert');
 
 function addToList() {
-    const userInput = document.getElementById('inputText').value;
+    const userInput = document.getElementById('inputText');
     let li = document.createElement('li');
     
-    if(userInput == ''){
+    if(userInput.value == ''){
         alertMg.style.color = 'red';
         alertMg.textContent = 'Plese Add Item!';
     }
     else {
-        li.innerHTML += `<div title="Hit Double Click and Complete" ondblclick="toDoDone(event)">${userInput}</div>
+        li.innerHTML += `<div title="Hit Double Click and Complete" ondblclick="toDoDone(event)">${userInput.value}</div>
         <img src="images/delete.svg" alt="Delete" class="delete-icon" id="delete-img" onclick="toDoDelete(event)"/>`
 
         list.appendChild(li);
         alertMg.style.color = 'rgb(15, 197, 15)'
         alertMg.textContent = 'To Do item Crated Succeslly! '
         setInterval( () => alertMg.textContent = '',3000);
+        userInput.value = ''
     }
 
 }
