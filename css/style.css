@@ -82,6 +82,7 @@ form input {
     padding: .5em;
     border-radius: 100%;
     font-weight: 800;
+    cursor: pointer;
 }
 
 .list li {
@@ -98,6 +99,17 @@ form input {
 }
 
 
+form input:hover,
+form input:focus {
+    border: 1px solid var(--DARK-NIGHT);
+}
+
+
+.add-img:hover,
+.add-img:focus {
+    background-color: hsl(250, 36%, 45%);
+    
+}
 /* ---- medea query ----  */
 
 @media (min-width: 675px) {
