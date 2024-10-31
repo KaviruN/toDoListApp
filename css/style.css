@@ -56,6 +56,13 @@ body {
     
 }
 
+.alert {
+    font-weight: 700;
+    font-size: 1rem;
+    opacity: .8;
+    margin-bottom: .5em;
+}
+
 /* 
 ---- layout ---- */
 
@@ -64,7 +71,7 @@ form {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    margin-bottom: 2em;
+    margin-bottom: .75em;
 }
 
 form input {
@@ -125,6 +132,11 @@ form input:focus {
     scale: 1.3;
 }
 
+
+.done-style {
+    text-decoration: line-through;
+    opacity: .5;
+}
 
 /* ---- medea query ----  */
 
