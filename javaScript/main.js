@@ -13,8 +13,8 @@ function addToList() {
         alertMg.textContent = 'Plese Add Item!';
     }
     else {
-        li.innerHTML += `<div title="Hit Double Click and Complete" ondblclick="toDoDone()">${userInput}</div>
-        <img src="images/delete.svg" alt="Delete" class="delete-icon" id="delete-img" onclick="toDoDelete()"/>`
+        li.innerHTML += `<div title="Hit Double Click and Complete" ondblclick="toDoDone(event)">${userInput}</div>
+        <img src="images/delete.svg" alt="Delete" class="delete-icon" id="delete-img" onclick="toDoDelete(event)"/>`
 
         list.appendChild(li);
         alertMg.style.color = 'rgb(15, 197, 15)'
@@ -24,8 +24,12 @@ function addToList() {
 
 }
 
-function toDoDone() {
-
+function toDoDone(event) {
+    const item = event.target;
+    item.classList.toggle('done-style');
 }
 
-function toDoDelete() { }
+function toDoDelete(event) {
+    let element = event.target.closest('li');
+    element.remove();
+ }
