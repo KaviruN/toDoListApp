@@ -75,6 +75,7 @@ form input {
     border-radius: 2em;
     margin-right: 1em;
     outline: none;
+    transition: all .3s;  
 }
 
 .add-img {
@@ -83,6 +84,7 @@ form input {
     border-radius: 100%;
     font-weight: 800;
     cursor: pointer;
+    transition: all .3s;  
 }
 
 .list li {
@@ -95,7 +97,8 @@ form input {
     background-color: var(--LIGHT-NIGHT);
     margin-bottom: 1.5em;
     border-radius: 2em;
-    opacity: .8;   
+    opacity: .8;
+    transition: all .3s;   
 }
 
 
